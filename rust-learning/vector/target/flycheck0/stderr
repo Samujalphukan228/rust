@@ -1,60 +1,14 @@
-   0.036679800s  INFO prepare_target{force=false package_id=vector v0.1.0 (C:\Users\samuj\Desktop\rust\rust-learning\vector) target="vector"}: cargo::core::compiler::fingerprint: fingerprint error for vector v0.1.0 (C:\Users\samuj\Desktop\rust\rust-learning\vector)/Check { test: false }/TargetInner { name: "vector", doc: true, ..: with_path("C:\\Users\\samuj\\Desktop\\rust\\rust-learning\\vector\\src\\main.rs", Edition2024) }
-   0.036776900s  INFO prepare_target{force=false package_id=vector v0.1.0 (C:\Users\samuj\Desktop\rust\rust-learning\vector) target="vector"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\samuj\Desktop\rust\rust-learning\vector\target\debug\.fingerprint\vector-f57d6610d5aa8f18\bin-vector`
-
-Caused by:
-    The system cannot find the file specified. (os error 2)
-
-Stack backtrace:
-   0: git_midx_writer_dump
-   1: git_midx_writer_dump
-   2: git_midx_writer_dump
-   3: git_midx_writer_dump
-   4: git_filter_source_repo
-   5: git_filter_source_repo
-   6: git_filter_source_repo
-   7: git_filter_source_repo
-   8: git_filter_source_repo
-   9: git_filter_source_repo
-  10: git_filter_source_repo
-  11: git_libgit2_prerelease
-  12: <unknown>
-  13: <unknown>
-  14: <unknown>
-  15: <unknown>
-  16: git_midx_writer_dump
-  17: git_filter_source_repo
-  18: git_midx_writer_dump
-  19: BaseThreadInitThunk
-  20: RtlUserThreadStart
-   0.105528400s  INFO prepare_target{force=false package_id=vector v0.1.0 (C:\Users\samuj\Desktop\rust\rust-learning\vector) target="vector"}: cargo::core::compiler::fingerprint: fingerprint error for vector v0.1.0 (C:\Users\samuj\Desktop\rust\rust-learning\vector)/Check { test: true }/TargetInner { name: "vector", doc: true, ..: with_path("C:\\Users\\samuj\\Desktop\\rust\\rust-learning\\vector\\src\\main.rs", Edition2024) }
-   0.105593700s  INFO prepare_target{force=false package_id=vector v0.1.0 (C:\Users\samuj\Desktop\rust\rust-learning\vector) target="vector"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\samuj\Desktop\rust\rust-learning\vector\target\debug\.fingerprint\vector-f4c1542e7c153c52\test-bin-vector`
-
-Caused by:
-    The system cannot find the file specified. (os error 2)
-
-Stack backtrace:
-   0: git_midx_writer_dump
-   1: git_midx_writer_dump
-   2: git_midx_writer_dump
-   3: git_midx_writer_dump
-   4: git_filter_source_repo
-   5: git_filter_source_repo
-   6: git_filter_source_repo
-   7: git_filter_source_repo
-   8: git_filter_source_repo
-   9: git_filter_source_repo
-  10: git_filter_source_repo
-  11: git_libgit2_prerelease
-  12: <unknown>
-  13: <unknown>
-  14: <unknown>
-  15: <unknown>
-  16: git_midx_writer_dump
-  17: git_filter_source_repo
-  18: git_midx_writer_dump
-  19: BaseThreadInitThunk
-  20: RtlUserThreadStart
+   0.273839100s  INFO prepare_target{force=false package_id=vector v0.1.0 (C:\Users\samuj\Desktop\rust\rust-learning\vector) target="vector"}: cargo::core::compiler::fingerprint: stale: changed "C:\\Users\\samuj\\Desktop\\rust\\rust-learning\\vector\\src\\main.rs"
+   0.273896900s  INFO prepare_target{force=false package_id=vector v0.1.0 (C:\Users\samuj\Desktop\rust\rust-learning\vector) target="vector"}: cargo::core::compiler::fingerprint:           (vs) "C:\\Users\\samuj\\Desktop\\rust\\rust-learning\\vector\\target\\debug\\.fingerprint\\vector-f57d6610d5aa8f18\\dep-bin-vector"
+   0.273923500s  INFO prepare_target{force=false package_id=vector v0.1.0 (C:\Users\samuj\Desktop\rust\rust-learning\vector) target="vector"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13409223051, nanos: 448039100 } < FileTime { seconds: 13409223155, nanos: 231099500 }
+   0.274377900s  INFO prepare_target{force=false package_id=vector v0.1.0 (C:\Users\samuj\Desktop\rust\rust-learning\vector) target="vector"}: cargo::core::compiler::fingerprint: fingerprint dirty for vector v0.1.0 (C:\Users\samuj\Desktop\rust\rust-learning\vector)/Check { test: false }/TargetInner { name: "vector", doc: true, ..: with_path("C:\\Users\\samuj\\Desktop\\rust\\rust-learning\\vector\\src\\main.rs", Edition2024) }
+   0.274449600s  INFO prepare_target{force=false package_id=vector v0.1.0 (C:\Users\samuj\Desktop\rust\rust-learning\vector) target="vector"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "C:\\Users\\samuj\\Desktop\\rust\\rust-learning\\vector\\target\\debug\\.fingerprint\\vector-f57d6610d5aa8f18\\dep-bin-vector", reference_mtime: FileTime { seconds: 13409223051, nanos: 448039100 }, stale: "C:\\Users\\samuj\\Desktop\\rust\\rust-learning\\vector\\src\\main.rs", stale_mtime: FileTime { seconds: 13409223155, nanos: 231099500 } }))
+   0.276135600s  INFO prepare_target{force=false package_id=vector v0.1.0 (C:\Users\samuj\Desktop\rust\rust-learning\vector) target="vector"}: cargo::core::compiler::fingerprint: stale: changed "C:\\Users\\samuj\\Desktop\\rust\\rust-learning\\vector\\src\\main.rs"
+   0.276169700s  INFO prepare_target{force=false package_id=vector v0.1.0 (C:\Users\samuj\Desktop\rust\rust-learning\vector) target="vector"}: cargo::core::compiler::fingerprint:           (vs) "C:\\Users\\samuj\\Desktop\\rust\\rust-learning\\vector\\target\\debug\\.fingerprint\\vector-f4c1542e7c153c52\\dep-test-bin-vector"
+   0.276183200s  INFO prepare_target{force=false package_id=vector v0.1.0 (C:\Users\samuj\Desktop\rust\rust-learning\vector) target="vector"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13409223051, nanos: 450038500 } < FileTime { seconds: 13409223155, nanos: 231099500 }
+   0.276480600s  INFO prepare_target{force=false package_id=vector v0.1.0 (C:\Users\samuj\Desktop\rust\rust-learning\vector) target="vector"}: cargo::core::compiler::fingerprint: fingerprint dirty for vector v0.1.0 (C:\Users\samuj\Desktop\rust\rust-learning\vector)/Check { test: true }/TargetInner { name: "vector", doc: true, ..: with_path("C:\\Users\\samuj\\Desktop\\rust\\rust-learning\\vector\\src\\main.rs", Edition2024) }
+   0.276515900s  INFO prepare_target{force=false package_id=vector v0.1.0 (C:\Users\samuj\Desktop\rust\rust-learning\vector) target="vector"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "C:\\Users\\samuj\\Desktop\\rust\\rust-learning\\vector\\target\\debug\\.fingerprint\\vector-f4c1542e7c153c52\\dep-test-bin-vector", reference_mtime: FileTime { seconds: 13409223051, nanos: 450038500 }, stale: "C:\\Users\\samuj\\Desktop\\rust\\rust-learning\\vector\\src\\main.rs", stale_mtime: FileTime { seconds: 13409223155, nanos: 231099500 } }))
     Checking vector v0.1.0 (C:\Users\samuj\Desktop\rust\rust-learning\vector)
-error: could not compile `vector` (bin "vector" test) due to 1 previous error
-warning: build failed, waiting for other jobs to finish...
 error: could not compile `vector` (bin "vector") due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `vector` (bin "vector" test) due to 1 previous error
