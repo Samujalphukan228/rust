@@ -1,11 +1,31 @@
 use std::io;
-use rand::Rng;
 
 fn main() {
-    println!("Guess the number!");
+    println!("Enter first number:");
+    let mut first: String = String::new();
+    io::stdin().read_line(&mut first).unwrap();
+    let a: f64 = first.trim().parse().unwrap();
 
-    let mut guess = String::new();
-    io::stdin().read_line(&mut guess).expect("Failed to read line");
+    println!("Enter operator (+ - * /):");
+    let mut op: String = String::new();
+    io::stdin().read_line(&mut op).unwrap();
+    let operator: &str = op.trim();
 
-    let guess: i32 = match guess
+    println!("Enter second number:");
+    let mut second: String = String::new();
+    io::stdin().read_line(&mut second).unwrap();
+    let b: f64 = second.trim().parse().unwrap();
+
+    let result = match operator {
+        "+" => a + b,
+        "-" => a - b,
+        "*" => a * b,
+        "/" => a / b,
+        _ => {
+            println!("Invalid operator");
+            return;
+        }
+    };
+
+    println!("Result = {}", result);
 }
